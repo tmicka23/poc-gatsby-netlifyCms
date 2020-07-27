@@ -1,15 +1,15 @@
 backend:
   name: github
   repo: otmicka23/poc-gatsby-netlifyCms
-media_folder: static/assets
+media_folder: content/assets
 public_folder: /assets
 collections:
   - name: blog
     label: Blog
-    folder: /static/blog
+    folder: /content/blog
     create: true
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - { name: date, label: Date, widget: datetime }
+      - { name: description, label: description }
+      - { name: html, label: Body, widget: markdown }
