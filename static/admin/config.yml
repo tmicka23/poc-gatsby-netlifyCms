@@ -1,6 +1,11 @@
 backend:
   name: github
   repo: otmicka23/poc-gatsby-netlifyCms
+  branch: master
+  site_domain: netlify.app
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+  api_root: https://api.github.com
 media_folder: content/assets
 public_folder: /assets
 collections:
