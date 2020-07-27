@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: otmicka23/poc-gatsby-netlifyCms
+  repo: tmicka23/poc-gatsby-netlifyCms
   branch: master
   site_domain: netlify.app
   base_url: https://api.netlify.com
@@ -11,7 +11,7 @@ public_folder: /assets
 collections:
   - name: blog
     label: Blog
-    folder: /content/blog
+    folder: /content/blog/{{title}}
     create: true
     fields:
       - { name: title, label: Title }
