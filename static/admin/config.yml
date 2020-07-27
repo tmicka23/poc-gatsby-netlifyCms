@@ -11,7 +11,7 @@ public_folder: /assets
 collections:
   - name: blog
     label: Blog
-    folder: /content/blog/{{slug}}/index.md
+    folder: /content/blog/
     create: true
     fields:
       - { name: title, label: Title }
