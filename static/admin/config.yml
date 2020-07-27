@@ -11,10 +11,11 @@ public_folder: /assets
 collections:
   - name: blog
     label: Blog
-    folder: /content/blog/{{title}}
+    folder: /content/blog/{{slug}}/index.md
     create: true
     fields:
       - { name: title, label: Title }
+      - { name: slug, label: Slug }
       - { name: date, label: Date, widget: datetime }
       - { name: description, label: description }
-      - { name: html, label: Body, widget: markdown }
+      - { name: body, label: Body, widget: markdown }
